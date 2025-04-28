@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HRM Dashboard (Bootstrap)</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-info-subtle">
+    <div class="container-fluid">
+        <div class="row min-vh-100">
+
+            <!-- Sidebar -->
+            <aside class="col-12 col-md-3 col-lg-2 bg-primary text-white d-flex flex-column p-3">
+                <h2 class="text-center mb-4">HRM</h2>
+                <nav class="nav flex-column">
+                    <a href="#" class="nav-link text-white bg-primary-subtle mb-2 rounded">Personnel Management</a>
+                    <a href="#" class="nav-link text-white bg-primary-subtle mb-2 rounded">Payroll and Compensation</a>
+                    <a href="#" class="nav-link text-white bg-primary-subtle mb-2 rounded">Time and Attendance</a>
+                    <a href="#" class="nav-link text-white bg-primary-subtle mb-2 rounded">Talent Management</a>
+                    <a href="#" class="nav-link text-white bg-primary-subtle mb-2 rounded">Employee Self-Service</a>
+                </nav>
+            </aside>
+
+            <!-- Main Content -->
+            <main class="col-12 col-md-9 col-lg-10 p-4">
+                <!-- Top Bar -->
+                <div class="d-flex justify-content-between align-items-center mb-4">
+                    <input type="text" class="form-control w-50 rounded-pill" placeholder="Search...">
+                    <span class="badge bg-secondary p-2 px-3 rounded-pill">Admin</span>
+                </div>
+
+                <!-- Stats Section -->
+                <div class="row g-3 mb-4">
+                    <div class="col-md-3">
+                        <div class="card text-center p-3">
+                            <div class="circle mx-auto mb-2"></div>
+                            <h5>1025</h5>
+                            <p class="text-muted">Active Employee</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card text-center p-3">
+                            <div class="circle mx-auto mb-2"></div>
+                            <h5>3000</h5>
+                            <p class="text-muted">Total Employee</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card text-center p-3">
+                            <div class="circle mx-auto mb-2"></div>
+                            <h5>100</h5>
+                            <p class="text-muted">Total Task</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card text-center p-3">
+                            <div class="circle mx-auto mb-2"></div>
+                            <h5>2314</h5>
+                            <p class="text-muted">Attendance</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Action Cards -->
+                <div class="row g-3 mb-4">
+                    <div class="col-md-2">
+                        <div class="card p-3 text-center action-card">Calculate Salary</div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="card p-3 text-center action-card">Calculate Tax</div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="card p-3 text-center action-card">Benefits</div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card p-3 text-center action-card">Compensation</div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card p-3 text-center action-card">Total Salary</div>
+                    </div>
+                </div>
+
+                <!-- Attendance Table -->
+                <div class="card p-4">
+                    <div class="table-responsive">
+                        <table class="table table-bordered text-center">
+                            <thead class="table-light">
+                                <tr>
+                                    <th>Attendance</th>
+                                    <th>Check In</th>
+                                    <th>Check Out</th>
+                                    <th>Working Hours</th>
+                                    <th>Break Time</th>
+                                    <th>Extra Hour</th>
+                                    <th>Status</th>
+                                </tr>
+                            </thead>
+                            <tbody id="attendanceBody">
+                                <!-- JavaScript will populate -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </main>
+
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

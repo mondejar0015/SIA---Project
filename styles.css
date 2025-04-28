@@ -1,0 +1,33 @@
+/* Sidebar */
+.sidebar .nav-link:hover {
+    background-color: #034F75 !important;
+}
+
+
+
+/* Action Cards Hover */
+.action-card {
+    background-color: #f8f9fa;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.action-card:hover {
+    background-color: #e2e6ea;
+}
+
+.bg-primary {
+    background-color: #034F75 !important;
+}
+
+
+.circle {
+    width: 40px;
+    height: 40px;
+    background: #034F75;
+    border-radius: 50%;
+}
+
+
+main.col-12.col-md-9.col-lg-10.p-4 {
+    background-color: #81A7BA !important;
+}
